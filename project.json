@@ -1,0 +1,25 @@
+{
+  "overview": "Focus Guard is a lean productivity app that helps users build focused habits through a daily task system, countdown timer, streak tracking, and 3 mini-games (Breathing, Tap Challenge, Memory) to manage urges and stay on track.",
+  "features": [
+    "Home dashboard with streak counter and quick-start focus button",
+    "Focus Mode countdown timer tied to task duration",
+    "Task management with separate action, time, and rule fields",
+    "Breathing mini-game with animated inhale/exhale rhythm",
+    "Tap Challenge game with increasing speed and score tracking",
+    "Memory card-matching game with timer",
+    "Daily streak tracking with current and all-time best",
+    "Persistent data storage across sessions",
+    "Dark mode with responsive design"
+  ],
+  "category": "productivity",
+  "tags": [
+    "productivity",
+    "focus",
+    "habits",
+    "streak",
+    "timer",
+    "games",
+    "mindfulness"
+  ],
+  "last_updated": "2026-05-02T18:05:56.923Z"
+}

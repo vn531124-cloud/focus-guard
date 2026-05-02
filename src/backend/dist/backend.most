@@ -1,0 +1,23 @@
+// Version: 1.0.0
+type FocusSession__765844501 = {completedAt : Int; taskId : Nat};
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type StreakData__1059735007 =
+  {bestStreak : Nat; currentStreak : Nat; lastFocusDate : Text};
+type Task__431803600 = {action : Text; id : Nat; rule : Text; time : Nat};
+actor {
+  stable nextTaskIdRef : {var val : Nat};
+  stable sessions :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?FocusSession__765844501]];
+      var elementIndex : Nat__490723111
+    };
+  stable streakRef : {var val : StreakData__1059735007};
+  stable tasks :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Task__431803600]];
+      var elementIndex : Nat__490723111
+    }
+};

@@ -1,0 +1,28 @@
+type Task = 
+ record {
+   action: text;
+   id: nat;
+   rule: text;
+   time: nat;
+ };
+type StreakData = 
+ record {
+   bestStreak: nat;
+   currentStreak: nat;
+   lastFocusDate: text;
+ };
+type FocusSession = 
+ record {
+   completedAt: int;
+   taskId: nat;
+ };
+service : {
+  createTask: (action: text, time: nat, rule: text) -> (Task);
+  deleteTask: (id: nat) -> (bool);
+  getStreak: () -> (StreakData) query;
+  listFocusSessions: () -> (vec FocusSession) query;
+  listTasks: () -> (vec Task) query;
+  recordFocusSession: (taskId: nat) -> (FocusSession);
+  updateStreak: (currentStreak: nat, bestStreak: nat, lastFocusDate: 
+   text) -> (StreakData);
+}
